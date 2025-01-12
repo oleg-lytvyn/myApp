@@ -26,6 +26,9 @@ import { FeaturedComponent } from './featured/featured.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   settings = inject(APP_SETTINGS);
   cartService = inject(CartService);
 }
